@@ -1,0 +1,84 @@
+*{
+    color: #fff;
+}
+html{
+//  min-height: 100%;
+//  width: 100%;
+    font-size: 12px;
+}
+.blur { 
+    filter        : url(blur.svg#blur); /* FireFox, Chrome, Opera */
+    -webkit-filter: blur(3px); /* Chrome, Opera */
+    -moz-filter   : blur(3px);
+    -ms-filter    : blur(3px);    
+    filter        : blur(3px);
+    filter        : progid:DXImageTransform.Microsoft.Blur(PixelRadius=8, MakeShadow=false); /* IE6~IE9 */
+}
+.background-img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background:#000;
+    background: url(../images/f1.jpg) no-repeat;
+    background-size:cover;
+    .blur;
+}
+header{
+    .nav{
+        width: 100%;
+        height: 100px;     
+        margin-top: 30px;   
+        overflow: hidden;
+       .content{
+            width: 80%;
+            margin: 0 auto;
+            padding-left: 60px;
+            position: relative;
+            .head{
+                display: inline-block;
+                width: 80px;
+                height: 60px;
+                position: absolute;
+                left: 0;
+//              border-radius: 50%;
+                overflow: hidden;
+                border: 1px solid #eee;
+                img{
+                    width: 100%;
+//                  height: 100%;
+                }
+            }
+            ul{
+                
+                li{
+                    display: inline-block;
+                    float: left;
+                    width: 15%;
+                    font-size: 26px;
+                    text-align: center;
+                    cursor: pointer;
+                    height: 60px;
+                    line-height: 60px;
+                    margin-right: 10px;
+                    color: #666;
+                    background: rgba(255,255,255,0.2);
+                    background-image: linear-gradient(rgba(255,255,255,0.6), rgba(233,233,233,0.6));
+                    background-image:  -moz-repeating-linear-gradient(rgba(255,255,255,0.6), rgba(233,233,233,0.6) );
+                    background-image: -webkit-repeating-linear-gradient( rgba(255,255,255,0.6), rgba(233,233,233,0.6) );
+                }
+                >.active{
+                    color: #fff;
+                    background: #f64f59;
+                    background-image: linear-gradient(#fe7080, #f74952);
+                    background-image:  -moz-repeating-linear-gradient( #fe7080, #f74952 );
+                    background-image: -webkit-repeating-linear-gradient( #fe7080, #f74952 );
+                }
+            }
+        }
+    }
+}
+#container{
+}
