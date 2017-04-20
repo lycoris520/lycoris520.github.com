@@ -3,62 +3,44 @@
 <!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
 <html>
 <head>
-	
+
   <title>Lycoris Home-welcome!</title>
-  
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="description" content="HOME PAGE">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
-  <link rel="stylesheet" href="stylesheets/github-dark.css">
   <link rel="stylesheet" href="stylesheets/index.css" />
-  
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
-  <script type="text/javascript" src="javascripts/avalon.js" ></script>
-  <!--<script type="text/javascript" src="javascripts/index.js" ></script>-->
-
-  <script>
-  	var model = avalon.define({
-    $id: "test",
-    url: "Template1",
-    name: "司徒正美",
-    password: '12345678',
-    array: [1, 2, 3, 4, 5, 6, 7],
-    add: function(e) {
-        if (this.value && e.which == 13) {//this为input元素
-            var a = this.value
-            model.array.push(a)
-            this.value = "";
-        }
-    }
-})
-  </script>
 </head>
 
-<body  ms-controller="test">
-  <div class="background-img"></div>
-  <div class="wrapper">
-  	{{name}}
-    <header>
-      	<div class="nav">
-    		<div class="content">
-    			<div class="head"><img src="https://avatars3.githubusercontent.com/u/17018180?v=3&amp;s=60"/></div>
-    			<ul>
-    				<li class="each home active">HOME</li>
-    				<li class="each page1">PAGE1</li>
-    				<li class="each page2">PAGE2</li>
-    				<li class="each page3">PAGE3</li>
-    				<li class="each page4">PAGE4</li>
-    				<div style="clear: both;"></div>
-    			</ul>
-    		</div>
-    	</div>
-    </header>
-    <div id="container" ms-include-src="home.html">
-    	<!--加载模板-->
+<body>
+
+    <header id="left">
+    <div>
+
     </div>
+    </header>
+    <main id="main">
+
+    </main>
+    <footer>
+
+    </footer>
+    <script type="text/javascript">
+        var left = new Vue({
+            el : 'left',
+            data : {
+
+            }
+        })
+        var main = new Vue({
+            el : 'body',
+            data : {
+
+            }
+        })
+    </script>
 </body>
 </html>

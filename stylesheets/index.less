@@ -1,21 +1,25 @@
+
 *{
     color: #fff;
 }
+
+
 html{
 //  min-height: 100%;
 //  width: 100%;
     font-size: 12px;
 }
-.blur { 
+.blur {
     filter        : url(blur.svg#blur); /* FireFox, Chrome, Opera */
     -webkit-filter: blur(3px); /* Chrome, Opera */
     -moz-filter   : blur(3px);
-    -ms-filter    : blur(3px);    
+    -ms-filter    : blur(3px);
     filter        : blur(3px);
     filter        : progid:DXImageTransform.Microsoft.Blur(PixelRadius=8, MakeShadow=false); /* IE6~IE9 */
 }
 .background-img{
     position: fixed;
+    padding: 0;
     top: 0;
     left: 0;
     bottom: 0;
@@ -29,8 +33,8 @@ html{
 header{
     .nav{
         width: 100%;
-        height: 100px;     
-        margin-top: 30px;   
+        height: 100px;
+        margin-top: 30px;
         overflow: hidden;
        .content{
             width: 80%;
@@ -52,7 +56,7 @@ header{
                 }
             }
             ul{
-                
+
                 li{
                     display: inline-block;
                     float: left;

@@ -1,0 +1,25 @@
+{
+  "name": "lycoris520.github.com",
+  "version": "1.0.0",
+  "description": "github home",
+  "main": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lycoris520/lycoris520.github.com.git"
+  },
+  "keywords": [
+    "lycorids"
+  ],
+  "author": "lycoris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lycoris520/lycoris520.github.com/issues"
+  },
+  "homepage": "https://github.com/lycoris520/lycoris520.github.com#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
